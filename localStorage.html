@@ -5,9 +5,6 @@
     <title>localStorage</title>
 </head>
 <body>
-<div id="msg" style="margin: 10px 0; border: 1px solid black; padding: 10px; width: 300px;
-  height: 100px;">
-</div>
 <input type="text" id="text" />
 <select id="type">
     <option value="session">sessionStorage</option>
@@ -15,10 +12,9 @@
 </select>
 <button onclick="save();">
     保存数据</button>
-<button onclick="load();">
-    读取数据</button>
+<a href="http://localhost:63342/localStorage-demo/input.html?_ijt=59shq9aaq5mjlb5pponrgof6al">跳转</a>
+
 <script type="text/javascript">
-    var msg = document.getElementById('msg'),
             text = document.getElementById('text'),
             type = document.getElementById('type');
 
@@ -32,14 +28,14 @@
         }
     }
 
-    function load() {
-        var t = type.value;
-        if (t == 'session') {
-            msg.innerHTML = sessionStorage.getItem('msg');
-        } else {
-            msg.innerHTML = localStorage.getItem('msg');
-        }
-    }
+//    function load() {
+//        var t = type.value;
+//        if (t == 'session') {
+//            msg.innerHTML = sessionStorage.getItem('msg');
+//        } else {
+//            msg.innerHTML = localStorage.getItem('msg');
+//        }
+//    }
 </script>
 </body>
 </html>

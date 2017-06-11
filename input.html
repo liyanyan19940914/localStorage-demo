@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>input</title>
+
+</head>
+<body>
+<div id="msg" style="margin: 10px 0; border: 1px solid black; padding: 10px; width: 300px;
+  height: 100px;">
+    </div>
+<button onclick="load();">
+    读取数据</button>
+<script>
+    const msg = document.getElementById('msg');
+    function load() {
+        msg.innerHTML = localStorage.getItem('msg');
+    }
+</script>
+</body>
+</html>
